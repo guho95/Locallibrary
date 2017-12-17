@@ -17,5 +17,13 @@ admin.site.register(Book, BookAdmin)
 
 class BookInstanceAdmin(admin.ModelAdmin):
     list_filter = ('status', 'due_back')
+    fieldsets = (
+        (None, {
+            'fields': ('book', 'imprint', 'id')
+        }),
+        ('Avialability', {
+            'fields': ('status', 'due_back')
+        }),
+    )
 admin.site.register(BookInstance, BookInstanceAdmin)
 # Register your models here.
