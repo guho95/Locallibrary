@@ -73,6 +73,8 @@ class BookInstance(models.Model):
 
     class Meta:
         ordering = ["due_back"]
+        verbose_name = 'Экземпляр книги'
+        verbose_name_plural = 'Экземпляры книг'
 
     def __str__(self):
         """
