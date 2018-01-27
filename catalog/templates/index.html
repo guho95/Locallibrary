@@ -14,6 +14,9 @@
     <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
     <li><strong>Authors:</strong> {{ num_authors }}</li>
     <li><strong>Количество жанров: </strong>{{ num_genre }}</li>
+
+
   </ul>
 
+    <p>Вы посетили это страницу {{ num_visits }}{% if num_visits == 1 %} раз{% else %} раз {% endif %}</p>
 {% endblock %}
