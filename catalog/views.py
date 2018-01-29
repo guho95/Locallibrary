@@ -8,7 +8,7 @@ from django.contrib.auth.decorators import permission_required
 
 from django.shortcuts import get_object_or_404
 from django.http import HttpResponseRedirect
-import django.core.urlresolvers
+# import django.core.urlresolvers
 import datetime
 
 from .forms import RenewBookForm
